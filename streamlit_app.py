@@ -43,5 +43,5 @@ if st.button('乱数を生成'):
 
 if st.button('京峰先生'):
     st.write(f'{user_input}、大好き（*´艸｀）')
-else:
+if st.button('池先生'):
     st.write(f'{user_input}、えーっと、どういうこと？')
