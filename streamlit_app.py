@@ -42,6 +42,6 @@ if st.button('乱数を生成'):
     st.write(f'生成された乱数:{random_num}')
 
 if st.button('京峰先生'):
-    st.write(f'{user_input}、大好き（*´艸｀）')
+    st.write(君のこと大好き（*´艸｀）')
 if st.button('池先生'):
-    st.write(f'{user_input}、えーっと、どういうこと？')
+    st.write(えーっと、どういうこと？')
