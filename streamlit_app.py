@@ -6,7 +6,7 @@ import random
 st.set_page_config(page_title="タイトル", layout="wide")
 
 # タイトルを設定
-st.title('Streamlitのサンプルアプリ')
+st.title('鳥居蒼空が作った優秀なアプリだよ！')
 
 # テキスト入力ボックスを作成し、ユーザーからの入力を受け取る
 user_input = st.text_input('あなたの名前を入力してください')
@@ -15,8 +15,10 @@ user_input = st.text_input('あなたの名前を入力してください')
 if st.button('挨拶する'):
     if user_input:  # 名前が入力されているかチェック
         st.success(f'🌟 こんにちは、{user_input}さん! 🌟')  # メッセージをハイライト
+        teacher = st.radio("好きな先生を選択してください", ["京峰先生", "池先生"])
+        st.image("path_to_image.jpg", caption="サンプル画像")
     else:
-        st.error('名前を入力してください。')  # エラーメッセージを表示
+        st.error('名前を入力してください。さもないと吊るし上げちゃうよ！')  # エラーメッセージを表示
 
 # スライダーを作成し、値を選択
 number = st.slider('好きな数字（10進数）を選んでください', 0, 100)
