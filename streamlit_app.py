@@ -15,12 +15,8 @@ user_input = st.text_input('あなたの名前を入力してください')
 if st.button('挨拶する'):
     if user_input:  # 名前が入力されているかチェック
         st.success(f'🌟 こんにちは、{user_input}さん! 🌟')  # メッセージをハイライト
-        teacher = st.radio("好きな先生を選択してください", ["京峰先生", "池先生"]) 
     else:
         st.error('名前を入力してください。さもないと吊るし上げちゃうよ！')  # エラーメッセージを表示
-
-if teacher == "京峰先生":""
-st.text("ありがとう（〃艸〃）") 
 
 # スライダーを作成し、値を選択
 number = st.slider('好きな数字（10進数）を選んでください', 0, 100)
@@ -44,3 +40,7 @@ if st.button('乱数を生成'):
 
     random_num = random.randint(min_val,max_val)
     st.write(f'生成された乱数:{random_num}')
+
+teacher = st.radio("好きな先生を選択してください", ["京峰先生", "池先生"]) 
+if teacher == ("京峰先生":"")
+    st.text("ありがとう（〃艸〃）") 
