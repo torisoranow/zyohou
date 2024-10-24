@@ -42,3 +42,5 @@ if st.button('乱数を生成'):
     st.write(f'生成された乱数:{random_num}')
 
 teacher = st.radio("好きな先生を選択してください", ["京峰先生", "池先生"]) 
+if st.button('京峰先生'):
+    st.write('{user_input}、大好き（*´艸｀）')
